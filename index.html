@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Клуб настольных игр «Мипл» | Санкт-Петербург</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="nav container">
+        <a href="#" class="nav-logo">🎲 Мипл</a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">О клубе</a></li>
+            <li><a href="#games">Игры</a></li>
+            <li><a href="#schedule">Расписание</a></li>
+            <li><a href="#pricing">Цены</a></li>
+            <li><a href="#footer">Контакты</a></li>
+        </ul>
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="nav-links">
+            <li><a href="#about">О клубе</a></li>
+            <li><a href="#games">Игры</a></li>
+            <li><a href="#schedule">Расписание</a></li>
+            <li><a href="#pricing">Цены</a></li>
+            <li><a href="#footer">Контакты</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>«Мипл» — настольные игры в центре Петербурга</h1>
+            <p>Собираемся каждую неделю, пьем крафтовый кофе и открываем новые коробки. Присоединяйся к партии.</p>
+            <a href="#pricing" class="btn">Выбрать абонемент</a>
+        </div>
+    </section>
+
+    <section id="about" class="about container">
+        <h2 style="text-align: center; font-size: 2.2rem; margin-bottom: 24px;">Уютный лофт у метро «Адмиралтейская»</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto 40px; color: var(--text-medium);">
+            Сотни игр на полках: от глубоких евро-стратегий до веселых пати-геймов. У нас всегда тепло, светло и пахнет свежим кофе.
+        </p>
+        <div class="features">
+            <div class="feature-item">
+                <span>📚</span>
+                <div>
+                    <strong>Более 150 игр</strong>
+                    <div style="font-size: 0.9rem; color: var(--text-medium);">От хардкора до новичков</div>
+                </div>
+            </div>
+            <div class="feature-item">
+                <span>☕</span>
+                <div>
+                    <strong>Крафт и снеки</strong>
+                    <div style="font-size: 0.9rem; color: var(--text-medium);">Чай, кофе и печенье бесплатно</div>
+                </div>
+            </div>
+            <div class="feature-item">
+                <span>🏆</span>
+                <div>
+                    <strong>Турниры по субботам</strong>
+                    <div style="font-size: 0.9rem; color: var(--text-medium);">Призовой фонд и мерч</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="games" class="games container">
+        <h2 style="text-align: center; font-size: 2.2rem; margin-bottom: 24px;">Во что играем на этой неделе</h2>
+        <div class="grid games-grid">
+            <div class="game-card">
+                <h3 class="game-title">Серп</h3>
+                <div class="game-meta">
+                    <span>Жанр: Стратегия</span>
+                    <span class="stars">★★★☆☆</span>
+                </div>
+                <p class="game-desc">Быстрая карточная дуэль с механикой подъема карт. Минимум рандома, максимум тактики.</p>
+            </div>
+            <div class="game-card">
+                <h3 class="game-title">Кодовые имена (Codenames)</h3>
+                <div class="game-meta">
+                    <span>Жанр: Ассоциативная</span>
+                    <span class="stars">★☆☆☆☆</span>
+                </div>
+                <p class="game-desc">Командная игра на ассоциации. Идеально для больших компаний и вечеринок.</p>
+            </div>
+            <div class="game-card">
+                <h3 class="game-title">Ужас Аркхэма (Arkham Horror)</h3>
+                <div class="game-meta">
+                    <span>Жанр: Кооператив</span>
+                    <span class="stars">★★★★☆</span>
+                </div>
+                <p class="game-desc">Мрачный Лавкрафт. Объединяйтесь с друзьями, чтобы закрыть врата в иные миры.</p>
+            </div>
+            <div class="game-card">
+                <h3 class="game-title">Бэнг! (Bang!)</h3>
+                <div class="game-meta">
+                    <span>Жанр: Роль/Блеф</span>
+                    <span class="stars">★★☆☆☆</span>
+                </div>
+                <p class="game-desc">Револьверная дуэль на Диком Западе. Кто здесь шериф, а кто — ренегат?</p>
+            </div>
+            <div class="game-card">
+                <h3 class="game-title">Азул (Azul)</h3>
+                <div class="game-meta">
+                    <span>Жанр: Семейная/Тактика</span>
+                    <span class="stars">★★☆☆☆</span>
+                </div>
+                <p class="game-desc">Эстетичная головоломка. Выкладывайте плитку, создавая португальские узоры.</p>
+            </div>
+            <div class="game-card">
+                <h3 class="game-title">Мертвый сезон (Dead of Winter)</h3>
+                <div class="game-meta">
+                    <span>Жанр: Выживание/Кооператив</span>
+                    <span class="stars">★★★★☆</span>
+                </div>
+                <p class="game-desc">Зомби-апокалипсис с механикой скрытых предателей. Выживет только самый хитрый.</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="#games" class="btn" style="background: var(--accent); color: var(--bg-dark);">Посмотреть весь каталог</a>
+        </div>
+    </section>
+
+    <section id="schedule" class="schedule container">
+        <h2 style="text-align: center; font-size: 2.2rem; margin-bottom: 24px;">Расписание встреч</h2>
+        <p style="text-align: center; max-width: 600px; margin: 0 auto 30px; color: var(--text-medium);">
+            Клуб открыт каждый день. Выбирайте удобное время для партии.
+        </p>
+        <ul class="schedule-list">
+            <li class="schedule-item">
+                <h4>Пн–Чт</h4>
+                <p>Открытые столы</p>
+                <p><strong>16:00 – 23:00</strong></p>
+            </li>
+            <li class="schedule-item">
+                <h4>Пятница</h4>
+                <p>Open Game Night</p>
+                <p><strong>18:00 – 02:00</strong></p>
+                <p style="font-size: 0.9rem; color: var(--text-medium);">Свободная запись</p>
+            </li>
+            <li class="schedule-item">
+                <h4>Суббота</h4>
+                <p>Турнирный день</p>
+                <p><strong>14:00 – 23:00</strong></p>
+                <p style="font-size: 0.9rem; color: var(--text-medium);">Регистрация обязательна</p>
+            </li>
+            <li class="schedule-item">
+                <h4>Воскресенье</h4>
+                <p>День новичков</p>
+                <p><strong>15:00 – 21:00</strong></p>
+                <p style="font-size: 0.9rem; color: var(--text-medium);">Обучение правилам</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="pricing" class="pricing container">
+        <h2 style="text-align: center; font-size: 2.2rem; margin-bottom: 24px;">Абонементы и цены</h2>
+        <div class="pricing-grid">
+            <div class="price-card">
+                <h3>Разовый визит</h3>
+                <div class="price-tag">500 ₽</div>
+                <ul>
+                    <li>Вход в клуб</li>
+                    <li>Чай, кофе, снеки</li>
+                    <li>Игры без доплат</li>
+                </ul>
+                <a href="#footer" class="btn">Купить</a>
+            </div>
+            <div class="price-card">
+                <h3>Месяц безлимита</h3>
+                <div class="price-tag">2500 ₽</div>
+                <ul>
+                    <li>Все игры клуба</li>
+                    <li>Напитки включены</li>
+                    <li>Приоритет на турнирах</li>
+                </ul>
+                <a href="#footer" class="btn">Купить</a>
+            </div>
+            <div class="price-card">
+                <h3>Студенческий тариф</h3>
+                <div class="price-tag">1800 ₽</div>
+                <ul>
+                    <li>Полный безлимит</li>
+                    <li>Скидка 28%</li>
+                    <li>Гостевой визит раз в месяц</li>
+                </ul>
+                <a href="#footer" class="btn">Купить</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<button class="scroll-top" id="scrollTop" aria-label="Наверх" title="Наверх">↑</button>
+
+<footer id="footer">
+    <div class="container">
+        <div class="footer-logo">🎲 Мипл</div>
+        <p>Санкт-Петербург, ул. Большая Морская, д. 1</p>
+        <p>Метро: Адмиралтейская</p>
+        <div class="footer-contacts">
+            <a href="tel:+78120000000">+7 (812) 000-00-00</a>
+            <a href="tg://resolve?domain=mipl_spb">Telegram: @mipl_spb</a>
+            <a href="mailto:play@mipl-club.ru">play@mipl-club.ru</a>
+        </div>
+        <div class="socials">
+            <a href="#" class="social-link" aria-label="ВКонтакте">💬</a>
+            <a href="#" class="social-link" aria-label="Telegram">📢</a>
+            <a href="#" class="social-link" aria-label="Дзен">📰</a>
+        </div>
+        <p style="margin-top: 20px; font-size: 0.85rem; color: var(--text-medium);">© 2026 Клуб «Мипл». Все права защищены.</p>
+    </div>
+</footer>
+
+<script src="main.js" defer></script>
+
+</body>
+</html>
