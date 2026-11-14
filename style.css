@@ -229,6 +229,58 @@ header {
     transform: translateY(0);
 }
 
+/* Индикатор автодеплоя: компактный бейдж с пульсирующей точкой */
+.deploy-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 24px;
+    padding: 6px 14px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: rgba(72, 247, 72, 0.08);
+    border: 1px solid rgba(72, 247, 72, 0.45);
+    border-radius: 999px;
+    box-shadow: 0 0 16px rgba(72, 247, 72, 0.15);
+    transition: var(--transition);
+}
+
+.deploy-badge:hover {
+    border-color: var(--accent-alt);
+    color: var(--accent-alt);
+    box-shadow: 0 0 22px rgba(0, 255, 255, 0.25);
+}
+
+.deploy-dot {
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: deploy-pulse 2s ease-out infinite;
+}
+
+@keyframes deploy-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(72, 247, 72, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 8px rgba(72, 247, 72, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(72, 247, 72, 0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .deploy-dot {
+        animation: none;
+    }
+}
+
 /* О клубе */
 .about {
     background: var(--bg-dark);
